@@ -8,15 +8,17 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    deadlift = request.args['deadlift']
+    use = request.args['use']
     #The request object stores information about the request sent to the server.
     #args is an ImmutableMultiDict (like a dictionary but can have mutliple values for the same key and can't be changed)
     #The information in args is visible in the url for the page being requested. ex. .../response?color=blue
-    if deadlift >= '315':
-        reply1 = "Zyzz would be proud"
-    else:
-        reply1 = "Lol beta weight"
-    n = int(request.args['deadlift']) #values in request.args are strings by default
+    if use == "Racing":
+        reply1 = "Street racing is illigal. Don't do it."
+    if use == "Ad"
+        reply1 = "You'll need somnething reliable you can thrash."
+    else
+        reply1 == "You most likely want more than 4 seats and a large trunk."
+    n = bool(request.args['use']) #values in request.args are strings by default
     reply2 = "I like cardio"
     return render_template('response.html', response1 = reply1, response2 = reply2)
 
