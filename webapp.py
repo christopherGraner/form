@@ -17,10 +17,12 @@ def render_response():
         reply1 = "Street racing is illigal. Don't do it."
     elif use == "Ad":
         reply1 = "You'll need somnething reliable you can thrash."
-    else:
-        reply1 == "You most likely want more than 4 seats and a large trunk."
+    elif use == "FC":
+        reply1 = "You most likely want more than 4 seats and a large trunk."
+
+
     n = bool(request.args['use']) #values in request.args are strings by default
-    reply2 = "I like cardio"
+    reply2 = ""
     return render_template('response.html', response1 = reply1, response2 = reply2)
 
 if __name__=="__main__":
