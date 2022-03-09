@@ -1,8 +1,18 @@
 
 body{
-  background-color: lightblue;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  background-color: BurlyWood;
   font-size: 20px;
 }
 div {
-
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+}
+p {
+  font-size: 20px
 }
